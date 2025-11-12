@@ -9,27 +9,19 @@
 </head>
 
 <body background="Background.jpg">
-    
-    
-    
-        
     <header>
-        <nav>
-            <ul>
-                <li style="font-weight: bolder; font-size: 30px;"><img src="logo.png" alt="logo"
-                    height="100px" width="100px" > 
-                </li>
-            
-
+        <nav class="navbar">
+            <div class="logo">
+<img src="logo.png" alt="logo" height="100px" width="100px">
+                </div>
+            <ul class="nav-links">
                 
-            <li class="highlight"><a href="/">Home</li></a>
-            <li class="highlight" ><a href="/">Products</li></a>
-            <li class="highlight"><a href="/">Resources</li></a>
-            <li class="highlight"><a href="/">Planning</li></a>
-            <li class="highlight"><a href="/">About us</li></a>
-            <li class="highlight"><a href="/">Log in</li></a>
-            <li class="highlight"><a href="/">Sign up</li></a>
-        
+            
+  <li class="nav-btn" id="homeBtn"><a href="index.html">Home</a></li>
+  <li class="nav-btn" id="loginBtn"><a href="login.html">Log in</a></li>
+  <li class="nav-btn" id="signupBtn"><a href="signup.html">Sign up</a></li>
+
+
         </nav>
     </header>
     <section class="hero">
@@ -37,8 +29,8 @@
             <h1>Welcome to Texto</h1>
             <p>The best and modern text editor app for everyone.</p>
             <div class="herob">
-                <a href="#download" class="btn primary">Download Now</a>
-                 <a href="#learn" class="btn secondary">Learn More</a>
+                <button id="downloadBtn" class="btn primary">Download Now</button>
+    <button id="learnMoreBtn" class="btn secondary">Learn More</button>
 
             </div>
         </div>
@@ -57,7 +49,7 @@
         of the text editor.
     </div>
     <div class="aria">
-        <div class="qwe">DOWNLOAD MAC OR LINUX VERSION</div>
+        <div class="qwe" id="macLinuxDownload">DOWNLOAD MAC OR LINUX VERSION</div>
     </div>
     <div class="charu">
         <div class="cropped">
@@ -72,83 +64,86 @@
         <div class="boxes box1">
             <h4>English</h4>
             <div class="rew">English</div>
-            <div class="child">Download 64-Bit</div>
-            <div class="child2">SHA256</div>
-            <div class="child3">F710BF78A1948AA9DD9F7090192DA527097C05B9C483F455A05E9 <br>3292D91AE27</div>
+                <input type="text" class="translate-input" data-lang="en"  placeholder="Type message to translate...">
+    <div class="translatedText"></div>
+
         </div>
         
         <div class="boxes box1">
             <h4>Deutsch</h4>
             <div class="rew">German</div>
-            <div class="child">Download 64-Bit</div>
-            <div class="child2">SHA256</div>
-            <div class="child3">F710BF78A1948AA9DD9F7090192DA527097C05B9C483F455A05E9 <br>3292D91AE27</div>
+            <input type="text" class="translate-input" data-lang="de" placeholder="Type message to translate...">
+    <div class="translatedText"></div>
         </div>
         <div class="boxes box1">
             <h4>Italiano</h4>
             <div class="rew">Italian</div>
-            <div class="child">Download 64-Bit</div>
-            <div class="child2">SHA256</div>
-            <div class="child3">F710BF78A1948AA9DD9F7090192DA527097C05B9C483F455A05E9 <br>3292D91AE27</div>
+            <input type="text" class="translate-input" data-lang="it" placeholder="Type message to translate...">
+    <div class="translatedText"></div>
         </div>
         <div class="boxes box1">
             <h4>Español</h4>
             <div class="rew">Spanish</div>
-            <div class="child">Download 64-Bit</div>
-            <div class="child2">SHA256</div>
-            <div class="child3">F710BF78A1948AA9DD9F7090192DA527097C05B9C483F455A05E9 <br>3292D91AE27</div>
+            <input type="text" class="translate-input" data-lang="es" placeholder="Type message to translate...">
+    <div class="translatedText"></div>
         </div>
         <div class="boxes box1">
             <h4>français</h4>
             
             <div class="rew">French</div>
-            <div class="child">Download 64-Bit</div>
-            <div class="child2">SHA256</div>
-            <div class="child3">F710BF78A1948AA9DD9F7090192DA527097C05B9C483F455A05E9 <br>3292D91AE27</div>
+            <input type="text" class="translate-input" data-lang="fr" placeholder="Type message to translate...">
+    <div class="translatedText"></div>
         </div>
         <div class="boxes box1">
             <h4>Português brasileiro</h4>
             <div class="rew">Brazilian Portuguese</div>
-            <div class="child">Download 64-Bit</div>
-            <div class="child2">SHA256</div>
-            <div class="child3">F710BF78A1948AA9DD9F7090192DA527097C05B9C483F455A05E9 <br>3292D91AE27</div>
+            <input type="text" class="translate-input" data-lang="pt-BR" placeholder="Type message to translate...">
+    <div class="translatedText"></div>
         </div>
         <div class="boxes box1">
             <h4>日本</h4>
             <div class="rew">Japanese</div>
-            <div class="child">Download 64-Bit</div>
-            <div class="child2">SHA256</div>
-            <div class="child3">F710BF78A1948AA9DD9F7090192DA527097C05B9C483F455A05E9 <br>3292D91AE27</div>
+           <input type="text" class="translate-input" data-lang="ja" placeholder="Type message to translate...">
+    <div class="translatedText"></div>
         </div>
         <div class="boxes box1">
             <h4>한국어</h4>
             <div class="rew">Korean</div>
-            <div class="child">Download 64-Bit</div>
-            <div class="child2">SHA256</div>
-            <div class="child3">F710BF78A1948AA9DD9F7090192DA527097C05B9C483F455A05E9 <br>3292D91AE27</div>
+            <input type="text" class="translate-input" data-lang="ko" placeholder="Type message to translate...">
+    <div class="translatedText"></div>
         </div>
         <div class="boxes box1">
             <h4>华语</h4>
             <div class="rew">Chinese</div>
-            <div class="child">Download 64-Bit</div>
-            <div class="child2">SHA256</div>
-            <div class="child3">F710BF78A1948AA9DD9F7090192DA527097C05B9C483F455A05E9 <br>3292D91AE27</div>
+            <input type="text" class="translate-input" data-lang="zh-CN" placeholder="Type message to translate...">
+    <div class="translatedText"></div>
         </div>
         <div class="boxes box1 box2">
             <h4>華語</h4>
             <div class="rew">Traditional Chinese</div>
-            <div class="child">Download 64-Bit</div>
-            <div class="child2">SHA256</div>
-            <div class="child3">F710BF78A1948AA9DD9F7090192DA527097C05B9C483F455A05E9 <br>3292D91AE27</div>
+            <input type="text" class="translate-input" data-lang="zh-TW" placeholder="Type message to translate...">
+    <div class="translatedText"></div>
         </div>
         
     </div>
-    
-    
+    <!-- These are hidden modals, they won’t move anything -->
+<div id="downloadModal" class="modal">
+  <div class="modal-content">
+    <span id="closeDownload" class="close">&times;</span>
+    <h2>Download Texto</h2>
+    <p>Your download will begin shortly. Thanks for choosing Texto!</p>
+  </div>
+</div>
 
+<div id="learnModal" class="modal">
+  <div class="modal-content">
+    <span id="closeLearn" class="close">&times;</span>
+    <h2>About Texto</h2>
+    <p>Texto is a fast, modern text editor designed for developers and writers alike.</p>
+  </div>
+</div>
+<script src="script.js"></script>
 </body>
-
-
 </html>
 
 
